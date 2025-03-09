@@ -1,0 +1,38 @@
+/* VARIABLES */
+
+:root {
+	--main-max-width: 850px;
+	--colored-text-color: var(--bs-primary-text-emphasis);
+}
+
+/* ELEMENTS */
+
+i {
+	color: var(--colored-text-color) !important;
+}
+
+main {
+	max-width: var(--main-max-width);
+}
+
+/* CLASSES */
+
+.color-text {
+	color: var(--colored-text-color) !important; 
+}
+
+/* MEDIA-QUARIES */
+
+@media screen and (max-width: 650px) {
+
+	#theme-select {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+
+	#plus-symbols, .nav-icon-text {
+		display: none;
+	}
+}

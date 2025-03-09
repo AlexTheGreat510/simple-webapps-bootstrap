@@ -1,0 +1,16 @@
+/* VARIABLES */
+
+:root {
+	--main-max-width: 650px;
+}
+
+/* CLASSES */
+
+.calc-body {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.calc-input {
+	grid-column: span 4;
+}

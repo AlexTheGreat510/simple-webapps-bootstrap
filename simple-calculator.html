@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator</title>
+
+    <!-- ICON -->
+    <link rel="icon" type="image/x-icon" href="img/simple-calculator.png">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simple-calculator.css">
+
+    <!-- SCRIPTS -->
+    <script defer src="js/script.js" type="text/javascript"></script>
+    <script defer src="js/simple-calculator.js" type="text/javascript"></script>
+</head>
+<body>
+    <main class="p-3 mx-auto">
+
+        <!-- APP-NAVBAR -->
+        <nav class="navbar">
+
+            <!-- NAVBAR-CONTAINER -->
+            <div class="container-fluid">
+
+                <!-- NAVBAR-LEFT -->
+                <div class="navbar-left d-flex">
+
+                    <!-- mainpage-link -->
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi bi-wrench-adjustable-circle-fill"></i> Webapps
+                    </a>
+
+                    <!-- theme-select -->
+                    <select class="shadow form-select" id="theme-select">
+                        <option>dark</option>
+                        <option>light</option>
+                    </select>
+                </div>
+
+                <!-- NAVBAR-RIGHT -->
+                <div class="navbar-right d-flex">
+
+                    <!-- todos-app -->
+                    <a class="navbar-brand" href="simple-todos.html">
+                        <i class="bi bi-check2-square"></i> <span class="nav-icon-text">todos</span>
+                    </a>
+
+                    <!-- calc-app -->
+                    <a class="navbar-brand" href="simple-calculator.html">
+                        <i class="bi bi-calculator-fill"></i> <span class="nav-icon-text">calculators</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CALC-HEADING -->
+        <h4 class="app-heading my-5 text-center">
+            <i class="bi bi-calculator-fill"></i> Simple Calculator
+        </h4>
+
+        <!-- CALC-BODY -->
+        <div class="calc-body p-4 gap-2 shadow rounded bg-body-tertiary">
+
+            <!-- CALC-INPUT -->
+            <input class="calc-input mb-3 fs-4 text-center form-control" id="calc-input" placeholder="Expression" readonly>
+
+            <!-- CALC-BUTTONS-1 -->
+            <button class="py-2 btn btn-dark" type="button">1</button>
+            <button class="py-2 btn btn-dark" type="button">2</button>
+            <button class="py-2 btn btn-dark" type="button">3</button>
+            <button class="py-2 btn btn-dark text-danger" type="button">C</button>
+
+            <!-- CALC-BUTTONS-2 -->
+            <button class="py-2 btn btn-dark" type="button">4</button>
+            <button class="py-2 btn btn-dark" type="button">5</button>
+            <button class="py-2 btn btn-dark" type="button">6</button>
+            <button class="py-2 btn btn-dark" type="button">+</button>
+
+            <!-- CALC-BUTTONS-3 -->
+            <button class="py-2 btn btn-dark" type="button">7</button>
+            <button class="py-2 btn btn-dark" type="button">8</button>
+            <button class="py-2 btn btn-dark" type="button">9</button>
+            <button class="py-2 btn btn-dark" type="button">-</button>
+
+            <!-- CALC-BUTTONS-4 -->
+            <button class="py-2 btn btn-dark" type="button">%</button>
+            <button class="py-2 btn btn-dark" type="button">/</button>
+            <button class="py-2 btn btn-dark" type="button">*</button>
+            <button class="py-2 btn btn-dark text-success" type="button">=</button>
+
+        </div>
+    </main>
+</body>
+</html>
