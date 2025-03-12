@@ -39,7 +39,7 @@ function addTodo()
   											<input class="form-check-input" type="checkbox">
   											<label class="form-check-label">${todoEmoji.value} ${todoInput.value}</label>
 										</div>
-										<button class="py-3 btn btn-outline-success" onclick="removeTodo(${todoCount})">delete</button>
+										<button class="py-3 shadow btn btn-outline-success" onclick="removeTodo(${todoCount})">delete</button>
 						    		</div>`;
 	}
 }
