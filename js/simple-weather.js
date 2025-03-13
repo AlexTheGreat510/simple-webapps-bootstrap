@@ -14,6 +14,8 @@ weatherCitySelect.addEventListener('change', () => {
 
 /* FUNCTIONS */
 
+fetchWeatherApi();
+
 function updateWeatherInfo(info)
 {
 	weatherWind.innerText = info.wind;
