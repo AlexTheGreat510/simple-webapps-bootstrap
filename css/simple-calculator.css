@@ -5,6 +5,6 @@
 	grid-template-columns: auto auto auto auto;
 }
 
-.calc-input {
+.calc-input, .equal-btn {
 	grid-column: span 4;
 }
