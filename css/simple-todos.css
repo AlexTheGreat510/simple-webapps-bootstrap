@@ -1,0 +1,8 @@
+/* MEDIA-QUARIES */
+
+@media screen and (max-width: 550px) {
+
+	#plus-symbols {
+		display: none;
+	}
+}

@@ -23,16 +23,9 @@ main {
 
 /* MEDIA-QUARIES */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 500px) {
 
 	#theme-select {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 550px) {
-
-	#plus-symbols, .nav-icon-text {
 		display: none;
 	}
 }
