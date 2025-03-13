@@ -21,7 +21,6 @@ function updateWeatherInfo(info)
 	weatherWind.innerText = info.wind;
 	weatherTemp.innerText = info.temperature;
 	weatherDesc.innerText = info.description;
-	weatherCity.innerText = weatherCitySelect.value;
 }
 
 async function fetchWeatherApi()
