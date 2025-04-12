@@ -3,18 +3,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple Webapps</title>
+    <title>Simple Spacenews</title>
 
     <!-- ICON -->
-    <link rel="icon" type="image/x-icon" href="img/index.png">
+    <link rel="icon" type="image/x-icon" href="img/simple-spacenews.png">
 
     <!-- STYLES -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simple-spacenews.css">
 
     <!-- SCRIPT -->
     <script defer src="js/script.js" type="text/javascript"></script>
+    <script defer src="js/simple-spacenews.js" type="text/javascript"></script>
 </head>
 <body>
     <main class="p-3 mx-auto">
@@ -66,57 +68,31 @@
             </div>
         </nav>
 
-        <!-- SIMPLE-WEBAPPS-HEADING -->
+        <!-- SIMPLE-SPACENEWS-HEADING -->
         <h4 class="app-heading my-5 text-center">
-            <i class="bi bi-wrench-adjustable-circle-fill"></i> Simple Webapps
+            <i class="bi bi-rocket-takeoff-fill"></i> Simple Spacenews
         </h4>
 
-        <!-- SIMPLE-WEBAPPS-LIST -->
-        <ul class="shadow list-group">
+        <!-- SIMPLE-SPACENEWS-LAYOUT -->
+        <div class="mb-5 d-flex align-items-center justify-content-between">
 
-            <!-- WALLPAPER-APP -->
-            <li class="fs-4 list-group-item">
-                <a class="navbar-brand" href="simple-wallpaper.html">
-                    <i class="bi bi-image"></i> Wallpapers
-                </a>
-            </li>
+            <!-- select-label -->
+            <label class="me-2 mt-2 fs-5 d-flex form-label">
+                <i class="me-2 bi bi-layout-text-sidebar"></i> Layout: 
+            </label>
 
-            <!-- CALC-APP -->
-            <li class="fs-4 list-group-item">
-                <a class="navbar-brand" href="simple-calculator.html">
-                    <i class="bi bi-calculator-fill"></i> Calculator
-                </a>
-            </li>
+            <!-- layout-select -->
+            <select class="w-25 shadow form-select" id="layout-select">
+                <option>default</option>
+                <option>card</option>
+                <option>list</option>
+            </select>
 
-            <!-- WEATHER-APP -->
-            <li class="fs-4 list-group-item">
-                <a class="navbar-brand" href="simple-weather.html">
-                    <i class="bi bi-wind"></i> Weather
-                </a>
-            </li>
+        </div>
 
-            <!-- TODOS-APP -->
-            <li class="fs-4 list-group-item">
-                <a class="navbar-brand" href="simple-todos.html">
-                    <i class="bi bi-check2-square"></i> Todos
-                </a>
-            </li>
+        <!-- SIMPLE-SPACENEWS-CONTAINER -->
+        <div class="default-layout" id="simple-spacenews-container"></div>
 
-            <!-- SPACE-NEWS-APP -->
-            <li class="fs-4 list-group-item">
-                <a class="navbar-brand" href="simple-spacenews.html">
-                    <i class="bi bi-rocket-fill"></i> Space News
-                </a>
-            </li>
-
-            <!-- TABLE-APP -->
-            <li class="fs-4 list-group-item">
-                <a class="navbar-brand" href="simple-table.html">
-                    <i class="bi bi-table"></i> Table Generator
-                </a>
-            </li>
-
-        </ul>
     </main>
 </body>
 </html>

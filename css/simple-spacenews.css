@@ -1,0 +1,18 @@
+/* CLASSES */
+
+.default-layout {
+	display: grid;
+}
+
+.list-layout > * {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: auto auto;
+}
+
+.card-layout {
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: auto auto;
+}
