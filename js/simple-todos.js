@@ -1,13 +1,17 @@
 /* VARIABLES */
 
 let todoCount = 0;
-let todoEmoji = document.getElementById('todo-emoji');
-let todoInput = document.getElementById('todo-input');
-let todoAddBtn = document.getElementById('todo-add-btn');
-let todoContainer = document.getElementById('todo-container');
-let todoRemoveAll = document.getElementById('todo-remove-all');
+const todoEmoji = document.getElementById('todo-emoji');
+const todoInput = document.getElementById('todo-input');
+const todoAddBtn = document.getElementById('todo-add-btn');
+const todoContainer = document.getElementById('todo-container');
+const todoRemoveAll = document.getElementById('todo-remove-all');
 
 /* EVENTS */
+
+todoInput.addEventListener('keypress', (e) => {
+	if (e.key === 'Enter') addTodo();
+});
 
 todoAddBtn.addEventListener('click', () => {
 	addTodo();
